@@ -20,6 +20,16 @@
       <Name>AUTH_CODE</Name>
       <Mode/>
     </Variable>
+   <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+   <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Networking>
     <Mode>bridge</Mode>
