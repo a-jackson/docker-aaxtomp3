@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category></Category>
+  <Name>AAXtoMP3</Name>
+  <Description>
+  <Overview>
+    Convert Audible aax files to mp3
+  </Overview>
+  </Description>
+  <Registry>>https://registry.hub.docker.com/u/ajackson3/aaxtomp3</Registry>
+  <GitHub>https://github.com/a-jackson/docker-aaxtomp3</GitHub>
+  <Repository>ajackson3/aaxtomp3</Repository>
+  <Support></Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+   <Variable>
+      <Value></Value>
+      <Name>AUTH_CODE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/source</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/dest</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/complete</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+</Container>
+
