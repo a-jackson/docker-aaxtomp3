@@ -1,15 +1,16 @@
-FROM ubuntu:bionic
+FROM alpine:latest
 
 ENV AUTH_CODE=""
 
 VOLUME /source /dest /complete
 
-RUN apt-get update
-RUN apt-get install -y \
+RUN apk add --no-cache \
     unzip \
     wget \
     ffmpeg \
-    bc
+    bc \
+    bash \
+    grep
 RUN wget https://github.com/KrumpetPirate/AAXtoMP3/archive/master.zip && \
   unzip master.zip -d /
 
